@@ -1,11 +1,11 @@
-# Intro to Dart for Java Developers
+# [Intro to Dart for Java Developers](https://codelabs.developers.google.com/codelabs/from-java-to-dart)
 
 > [This folder is based on the "Intro to Dart for Java Developers" codelab](https://codelabs.developers.google.com/codelabs/from-java-to-dart)
 
 * Dart is the programming language for Flutter.
 * You can run the examples in [DartPad](https://dartpad.dartlang.org/) or in an IDE (e.g. [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code))
 
-## Create a simple Dart class
+## [Create a simple Dart class](https://codelabs.developers.google.com/codelabs/from-java-to-dart/#1)
 
 See [`bicycle.dart`](./bicycle.dart) for more details.
 
@@ -29,7 +29,7 @@ In Dart,
 * Define custom setters, getters if you want to enforce read-only or write-only variables, compute or verify a value, or update a value elsewhere.
 * Start with a simple field and refactor it later if needed to setters and getters accessing a private field: The API stays the same.
 
-## Use optional parameters (instead of overloading)
+## [Use optional parameters (instead of overloading)](https://codelabs.developers.google.com/codelabs/from-java-to-dart/#2)
 
 See [`rectangle.dart`](./rectangle.dart) for more details.
 
@@ -91,7 +91,7 @@ Rectangle(width: 200);
 Rectangle();
 ```
 
-## Create a factory
+## [Create a factory](https://codelabs.developers.google.com/codelabs/from-java-to-dart/#3)
 
 See [`shape.dart`](./shape.dart) for more details.
 
@@ -164,13 +164,15 @@ Unhandled exception:
 Cannot create shape with type invalid shape
 ```
 
-## Implement an interface
+## [Implement an interface](https://codelabs.developers.google.com/codelabs/from-java-to-dart/#4)
 
 See [`interfaces.dart`](./interfaces.dart) for more details.
 
 The `interface` keyword doesn't exist in Dart: every class defines an interface.
 
-## Use Dart for functional programming
+## [Use Dart for functional programming](https://codelabs.developers.google.com/codelabs/from-java-to-dart/#5)
+
+See [`functional.dart`](./functional.dart) for more details.
 
 Dart support many functional programming features, like:
 
@@ -178,3 +180,7 @@ Dart support many functional programming features, like:
 * Assign a function to a variable
 * Currying: deconstruct a function that takes multiple arguments into a sequence of functions that each take a single argument
 * Create nameless function that can be used as a constant value (lambda expressions in Java)
+
+## [Congrats](https://codelabs.developers.google.com/codelabs/from-java-to-dart/#6)
+
+Where to go know and what else we should learn.
