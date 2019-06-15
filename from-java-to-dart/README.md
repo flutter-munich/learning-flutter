@@ -163,3 +163,9 @@ If you don't catch the exception:
 Unhandled exception:
 Cannot create shape with type invalid shape
 ```
+
+## Implement an interface
+
+See [`interfaces.dart`](./interfaces.dart) for more details.
+
+The `interface` keyword doesn't exist in Dart: every class defines an interface.
