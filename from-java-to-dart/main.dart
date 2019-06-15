@@ -50,4 +50,14 @@ class Bicycle {
   // Fat arrow notation => can be used to shorten simple functions
   // String interpolation '$variable'
   String toString() => 'Bicycle: $speed mph';
+
+  /// Decrease bike's [speed] by [decrement].
+  void applyBrake(int decrement) {
+    _speed -= decrement;
+  }
+
+  /// Increase bike's [speed] by [increment].
+  void speedUp(int increment) {
+    _speed += increment;
+  }
 }
