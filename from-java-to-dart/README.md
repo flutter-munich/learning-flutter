@@ -90,3 +90,76 @@ Rectangle(origin: const Point(10, 10));
 Rectangle(width: 200);
 Rectangle();
 ```
+
+## Create a factory
+
+See [`shape.dart`](./shape.dart) for more details.
+
+Factory is a design pattern commonly used in Java. The pattern is used to:
+* Hide details of instantiation
+* Return a subtype of the factory's return type
+* Return an existing object rather than a new object
+
+In Dart, there are multiple ways to implement a factory:
+1. Top-level function
+2. Factory constructor
+
+In this example, a `Shape` has an `area`. There are multiple shapes: `Square`, `Circle`.
+
+
+```dart
+abstract class Shape {
+  num get area;
+}
+
+class Circle implements Shape { /* ... */ }
+class Square implements Shape { /* ... */ }
+```
+
+* You can define multiple classes in one file
+* `dart:math` is one of Dart's core library (which I decided not to use in the example)
+* in Dart 2, core library constants are lowercase (why?)
+* getters can return fields or calculate a value, for example `num get area => r * r * pi;`
+
+Alright, so we have two different classes that implement `Shape`.
+
+Now, it's tim to create the factories.
+
+### Top-level function
+
+The first way is to use a top level function.
+
+```dart
+Shape shapeFactory(String type) {
+    if (type == 'circle') return Circle(2);
+    if (type == 'square') return Square(4);
+    throw 'Cannot create shape with type $type';
+}
+```
+
+### Factory constructor
+
+```dart
+abstract class Shape {
+  num get area;
+
+  factory Shape(String type) {
+    if (type == 'circle') return Circle(2);
+    if (type == 'square') return Square(4);
+    throw 'Cannot create shape with type $type';
+  }
+}
+```
+
+### Exceptions
+
+* Use common exceptions: Dart SDK defines classes for many common exceptions
+* Extend the `Exception` class to create your own, more specific, eception
+* Just throw a string? It's the lazy way
+
+If you don't catch the exception:
+
+```
+Unhandled exception:
+Cannot create shape with type invalid shape
+```
