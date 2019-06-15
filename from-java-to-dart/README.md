@@ -169,3 +169,12 @@ Cannot create shape with type invalid shape
 See [`interfaces.dart`](./interfaces.dart) for more details.
 
 The `interface` keyword doesn't exist in Dart: every class defines an interface.
+
+## Use Dart for functional programming
+
+Dart support many functional programming features, like:
+
+* Pass functions as arguments
+* Assign a function to a variable
+* Currying: deconstruct a function that takes multiple arguments into a sequence of functions that each take a single argument
+* Create nameless function that can be used as a constant value (lambda expressions in Java)
