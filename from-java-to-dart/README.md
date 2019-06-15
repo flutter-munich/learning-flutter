@@ -7,6 +7,8 @@
 
 ## Create a simple Dart class
 
+See [`bicycle.dart`](./bicycle.dart) for more details.
+
 In Dart,
 
 * You can define code outside of classes (unlike Java, where everything is a class).
@@ -26,3 +28,65 @@ In Dart,
 * Implicit getters and setters are provided for all public instance variables.
 * Define custom setters, getters if you want to enforce read-only or write-only variables, compute or verify a value, or update a value elsewhere.
 * Start with a simple field and refactor it later if needed to setters and getters accessing a private field: The API stays the same.
+
+## Use optional parameters (instead of overloading)
+
+See [`rectangle.dart`](./rectangle.dart) for more details.
+
+Compare the constructors in Java with Dart.
+
+### Java
+
+```java
+public class Rectangle {
+    public int width = 0;
+    public int height = 0;
+    public Point origin;
+
+    // four constructors
+    public Rectangle() {
+        origin = new Point(0, 0);
+    }
+    public Rectangle(Point p) {
+        origin = p;
+    }
+    public Rectangle(int w, int h) {
+        origin = new Point(0, 0);
+        width = w;
+        height = h;
+    }
+    public Rectangle(Point p, int w, int h) {
+        origin = p;
+        width = w;
+        height = h;
+    }
+    // Rest of the class
+}
+```
+
+### Dart
+
+```dart
+class Rectangle {
+  int width;
+  int height;
+  Point origin;
+
+  Rectangle({this.origin = const Point(0, 0), this.width = 0, this.height = 0});
+}
+```
+
+Dart constructor uses optional named parameters.
+
+* we assign instance variables inside a constructor's declaration by using the `this` keyword.
+* All parameters are optional named parameters. Named parameters are enclosed in curly braces `({})`.
+* The `this.origin = const Point(0, 0)` syntax specifies a default value of `Point(0,0)` for the `origin` instance variable. The specified default must be a compile-time constant. This constructor supplies default values for all three instance variables.
+
+All of these instantiations are valid:
+
+```dart
+Rectangle(origin: const Point(10, 20), width: 100, height: 200);
+Rectangle(origin: const Point(10, 10));
+Rectangle(width: 200);
+Rectangle();
+```
