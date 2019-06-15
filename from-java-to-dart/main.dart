@@ -21,12 +21,16 @@ class Bicycle {
   /// crank rpm to wheel rpm.
   int cadence;
 
+  // To mark an identifier as private to its library, start its name
+  // with an underscore
+  int _speed;
+
   /// Speed of the bike.
   ///
   /// For a bicycle to travel at the same speed, using a lower gear
   /// (larger mechanical advantage) requires the rider to pedal at a
   /// faster cadence, but with less force. 
-  int speed;
+  int get speed => _speed;
 
   /// Gearing is the aspect of a bicycle drivetrain that determines the
   /// relation between the cadence, the rate at which the rider pedals, 
@@ -36,7 +40,7 @@ class Bicycle {
   // Constructor has no body.
   // Using this in a constructor's parameter list is a handy shortcut
   // for assigning values to instance variables.
-  Bicycle(this.cadence, this.speed, this.gear);
+  Bicycle(this.cadence, this.gear);
 
 
   // The @override annotation tells the analyzer that you are intentionally

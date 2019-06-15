@@ -7,19 +7,6 @@
 
 ## Create a simple Dart class
 
-```dart
-
-class Bicycle {
-  // Instance variables.
-  // Notice: no private keyword
-  int cadence;
-  int speed;
-  int gear;
-  // Constructor has no body, and that's OK in Dart
-  Bicycle(this.cadence, this.speed, this.gear);
-}
-```
-
 In Dart,
 
 * You can define code outside of classes (unlike Java, where everything is a class).
@@ -35,3 +22,7 @@ In Dart,
 * Use `@override` to explicitly say that you **want to override** smoething. If it's not an overrideable method, the analyzer complains.
 * Strings can be specified with single and double quotes
 * String interpolation: `'$variable'`
+* Uninitialized variables (even numbers) have the value `null`
+* Implicit getters and setters are provided for all public instance variables.
+* Define custom setters, getters if you want to enforce read-only or write-only variables, compute or verify a value, or update a value elsewhere.
+* Start with a simple field and refactor it later if needed to setters and getters accessing a private field: The API stays the same.
