@@ -73,4 +73,14 @@ Formatted main.dart
 * The scaffold provides a default app bar, title and body.
 * The widget provides a `build` method that describes how to display the widget
 
+### Use an external package
+
+[`pub.dev`](https://pub.dev) contains open source packages. We install the `english_words` package that contains English words with some utility functions.
+
+In `lib/main.dart`, we import the new package by adding this line:
+
+```
+import 'package:english_words/english_words.dart';
+```
+
 ## Part 2
