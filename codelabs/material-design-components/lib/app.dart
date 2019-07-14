@@ -37,29 +37,27 @@ class _ShrineAppState extends State<ShrineApp> {
     });
   }
 
+  Widget buildHome() {
+    return Backdrop(
+      currentCategory: Category.all,
+      frontLayer: HomePage(
+        category: _currentCategory,
+      ),
+      backLayer: CategoryMenuPage(
+        currentCategory: _currentCategory,
+        onCategoryTap: _onCategoryTap,
+      ),
+      frontTitle: Text('SHRINE'),
+      backTitle: Text('MENU'),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Shrine',
-      home: Backdrop(
-        // TODO: Make currentCategory field take _currentCategory (104)
-        currentCategory: Category.all,
-        // TODO: Pass _currentCategory for frontLayer (104)
-        frontLayer: HomePage(
-          category: _currentCategory,
-        ),
-        // TODO: Change backLayer field value to CategoryMenuPage (104)
-        backLayer: CategoryMenuPage(
-          currentCategory: _currentCategory,
-          onCategoryTap: _onCategoryTap,
-        ),
-        frontTitle: Text('SHRINE'),
-        backTitle: Text('MENU'),
-      ),
-      // TODO: Make currentCategory field take _currentCategory (104)
-      // TODO: Pass _currentCategory for frontLayer (104)
-      // TODO: Change backLayer field value to CategoryMenuPage (104)
+      home: buildHome(),
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
       theme: _kShrineTheme,
@@ -79,9 +77,6 @@ class _ShrineAppState extends State<ShrineApp> {
   }
 }
 
-// TODO: Build a Shrine Theme (103)
-// TODO: Build a Shrine Text Theme (103)
-// TODO: Build a Shrine Theme (103)
 final ThemeData _kShrineTheme = _buildShrineTheme();
 
 ThemeData _buildShrineTheme() {

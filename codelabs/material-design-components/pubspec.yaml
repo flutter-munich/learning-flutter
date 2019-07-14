@@ -22,6 +22,7 @@ flutter:
           weight: 500
   uses-material-design: true
   assets:
+    - assets/slanted_menu.png
     - assets/diamond.png
     - packages/shrine_images/0-0.jpg
     - packages/shrine_images/1-0.jpg
