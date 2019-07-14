@@ -78,3 +78,5 @@ import 'missing-semicolons.dart'
 ```
 
 ## [Add customer info](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#7)
+
+## [Add date picker](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#8)

@@ -51,8 +51,8 @@ class _SearchTabState extends State<SearchTab> {
 
   @override
   Widget build(BuildContext context) {
-    final model = Provider.of<AppStateModel>(context);   
-    final results = model.search(_terms);                
+    final model = Provider.of<AppStateModel>(context);
+    final results = model.search(_terms);
 
     return DecoratedBox(
       decoration: const BoxDecoration(
