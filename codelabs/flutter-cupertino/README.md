@@ -42,7 +42,7 @@ Create skeleton of the app:
 
 * `CupertinoSliverNavigationBar` is how we get iOS 11 style expanding titles in the navigation bar. This is important to make an iOS user feel at home in the app.
 
-**TODO: Differences from guide**
+**TODO: Mistakes in codelab**
 
 ```dart
 return runApp(
@@ -67,4 +67,12 @@ class ProductListTab extends StatelessWidget {
        builder: (context, value, child) {
          // TODO: builder changed
          final products = value.getProducts();
+```
+
+## [Add product search](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#6)
+
+**TODO: Mistakes in codelab**
+
+```dart
+import 'missing-semicolons.dart'
 ```
