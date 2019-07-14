@@ -12,6 +12,9 @@ class MyApp extends StatelessWidget {
       title: 'Write Your First Flutter App',
       home: RandomWords(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
     );
   }
 }

@@ -118,3 +118,20 @@ We use the `onTap` event handlers on the `ListTile`: if the wordpair was already
 Push to a new route using the `Navigator.of(context).push(pageRoute)` function.
 
 We build the list of favorited items.
+
+### [Change the UI using Themes](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/index.html?index=..%2F..index#6)
+
+Let's make the primary color white (instead of that ugly blue color):
+
+```dart
+  return MaterialApp(
+    title: 'Write Your First Flutter App',
+    home: RandomWords(),
+    // Remove banner
+    debugShowCheckedModeBanner: false,
+    // Make app bar (etc) white.
+    theme: ThemeData(
+      primaryColor: Colors.white,
+    ),
+  );
+```
