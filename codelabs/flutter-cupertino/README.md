@@ -38,3 +38,33 @@ Create skeleton of the app:
 
 * `AppStateModel` shows a way of centralizing the state of the application, and making the state available throughout the whole application
 
+## [List products for sale(https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#5)
+
+* `CupertinoSliverNavigationBar` is how we get iOS 11 style expanding titles in the navigation bar. This is important to make an iOS user feel at home in the app.
+
+**TODO: Differences from guide**
+
+```dart
+return runApp(
+    // We are wiring the AppStateModel at the top of the widget tree
+    // to make it available throughout the entire app.
+    ChangeNotifierProvider<AppStateModel>(
+      // !!! Different in the tutorial: instead of
+      // model:model
+      // we need to provide a builder method
+      builder: (_) => AppStateModel()..loadProducts(),
+      child: CupertinoStoreApp(),
+    ),
+  );
+```
+
+```dart
+class ProductListTab extends StatelessWidget {
+ @override
+ Widget build(BuildContext context) {
+   return CupertinoPageScaffold(
+     child: Consumer<AppStateModel>(
+       builder: (context, value, child) {
+         // TODO: builder changed
+         final products = value.getProducts();
+```

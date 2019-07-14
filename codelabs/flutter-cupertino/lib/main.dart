@@ -11,7 +11,6 @@ import 'app.dart';
 
 import 'model/app_state_model.dart';
 
-
 void main() {
   // This app is designed only to work vertically, so we limit
   // orientations to portrait up and down.
@@ -22,11 +21,11 @@ void main() {
     // We are wiring the AppStateModel at the top of the widget tree
     // to make it available throughout the entire app.
     ChangeNotifierProvider<AppStateModel>(
-      // !!! Different in the tutorial: instead of 
+      // !!! Different in the tutorial: instead of
       // model:model
       // we need to provide a builder method
-      builder: (_) => AppStateModel(),
+      builder: (_) => AppStateModel()..loadProducts(),
       child: CupertinoStoreApp(),
-   ),
+    ),
   );
 }

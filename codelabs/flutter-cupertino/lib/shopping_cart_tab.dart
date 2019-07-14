@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 
 import 'model/app_state_model.dart';
 
-
 // The shopping cart tab is a stateful widget because it maintains
 // the list of purchases and the customer's info.
 class ShoppingCartTab extends StatefulWidget {
