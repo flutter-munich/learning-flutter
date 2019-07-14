@@ -51,4 +51,8 @@ Exactly one card :)
 
 ### [Modify typography and label styles](https://codelabs.developers.google.com/codelabs/mdc-103-flutter/#4)
 
+### [Adjust elevation](https://codelabs.developers.google.com/codelabs/mdc-103-flutter/#5)
+
+### [Add shapes](https://codelabs.developers.google.com/codelabs/mdc-103-flutter/#6)
+
 ## [Material Advanced Components](https://codelabs.developers.google.com/codelabs/mdc-104-flutter)
