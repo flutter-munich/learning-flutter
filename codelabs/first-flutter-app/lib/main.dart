@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Write Your First Flutter App',
       home: RandomWords(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -37,6 +38,34 @@ class RandomWordsState extends State<RandomWords> {
 
   // Make font size larger
   final TextStyle _biggerFont = const TextStyle(fontSize: 18);
+
+  void _pushFavorites() {
+    Navigator.of(context).push(
+      // <void> as it doesn't return a value
+      MaterialPageRoute<void>(
+        builder: (context) {
+          return Scaffold(
+            appBar: AppBar(
+              title: Text('Favorite startup names'),
+            ),
+            body: ListView(
+              children: ListTile.divideTiles(
+                context: context,
+                tiles: _favorites.map((wordpair) {
+                  return ListTile(
+                    title: Text(
+                      wordpair.asPascalCase,
+                      style: _biggerFont,
+                    ),
+                  );
+                }),
+              ).toList(),
+            ),
+          );
+        },
+      ),
+    );
+  }
 
   /// Build a row using the word pair: [pair]
   Widget _buildRow(WordPair pair) {
@@ -98,10 +127,13 @@ class RandomWordsState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Random words'),
-        ),
-        body: _buildSuggestions(),
-      );
+      appBar: AppBar(title: const Text('Random words'), actions: [
+        IconButton(
+          icon: Icon(Icons.list),
+          onPressed: _pushFavorites,
+        )
+      ]),
+      body: _buildSuggestions(),
+    );
   }
 }

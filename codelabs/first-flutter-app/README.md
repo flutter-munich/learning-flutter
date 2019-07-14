@@ -112,3 +112,9 @@ To do so, we use the `ListTile`'s `trailing` argument that expect a widget: we p
 ### [Add interactivity](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/index.html?index=..%2F..index#4)
 
 We use the `onTap` event handlers on the `ListTile`: if the wordpair was already favorited, we remove it from the favorites list on tap. When the user taps on a list item with a startup name that wasn't in the favorites list, we add that startup name to the favorites list.
+
+### [Navigate to a new screen](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/index.html?index=..%2F..index#5)
+
+Push to a new route using the `Navigator.of(context).push(pageRoute)` function.
+
+We build the list of favorited items.
