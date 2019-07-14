@@ -8,17 +8,34 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final wordPair = WordPair.random();
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Write Your First Flutter App',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          title: const Text('Random words'),
         ),
         body: Center(
-          child: Text(wordPair.asPascalCase),
+          child: RandomWords(),
         ),
       ),
     );
+  }
+}
+
+
+// This widget does very little: it just creates its state
+class RandomWords extends StatefulWidget {
+  @override
+  RandomWordsState createState() => RandomWordsState();
+}
+
+// This is the state that belong to the stateful widget RandomWords.
+// State<RandomWords> indicates that we use the generic state class
+// for use with RandomWords widget
+class RandomWordsState extends State<RandomWords> {
+  @override
+  Widget build(BuildContext context) {
+    final wp = WordPair.random();
+    return Text(wp.asPascalCase);
   }
 }

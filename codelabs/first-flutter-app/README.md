@@ -73,7 +73,7 @@ Formatted main.dart
 * The scaffold provides a default app bar, title and body.
 * The widget provides a `build` method that describes how to display the widget
 
-### Use an external package
+### [Use an external package](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/#3)
 
 [`pub.dev`](https://pub.dev) contains open source packages. We install the `english_words` package that contains English words with some utility functions.
 
@@ -82,5 +82,15 @@ In `lib/main.dart`, we import the new package by adding this line:
 ```
 import 'package:english_words/english_words.dart';
 ```
+
+### [Add a stateful widget](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/#4)
+
+*Stateless* widgets are immutable: their properties cannot change.
+
+*Stateful* widgets maintain state that might change during the lifetime of the widget. To implement a stateful widget: create a state and a stateful widget.
+
+The stateful widget class itself is immutable, but the state persists over the lifetime of the widget.
+
+We are creating a stateful widget. The state will save and generate random word pairs as the user scrolls through the app.
 
 ## Part 2
