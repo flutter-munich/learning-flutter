@@ -93,4 +93,12 @@ The stateful widget class itself is immutable, but the state persists over the l
 
 We are creating a stateful widget. The state will save and generate random word pairs as the user scrolls through the app.
 
+### [Create an infinite scrolling `ListView`](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/index.html?index=..%2F..index#5)
+
+Instead of displaying only one random word-pair, we display an infinite list of random words. `ListView`'s `builder` factory constructor allows you to build a list view lazily, on demand.
+
+The `ListView.builder` factory constructor takes an `itemBuilder` argument. Two parameters are passed to this function, the context and the row iterator index.
+
+Everytime we run out of suggested random word pairs, the builder function will create more random word pairs.
+
 ## Part 2
