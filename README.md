@@ -13,7 +13,10 @@ Flutter codelabs, cookbooks and other tutorials, commit by commit.
 * ❌ [Adding Google Maps to a Flutter App](https://codelabs.developers.google.com/codelabs/google-maps-in-flutter/index.html?index=..%2F..index) - 35 min
 * ❌ [Build a Photo Sharing app with Google Photos and Flutter](https://codelabs.developers.google.com/codelabs/google-photos-sharing/index.html?index=..%2F..index) - 46 min
 * ❌ [Building Beautiful UIs with Flutter](https://codelabs.developers.google.com/codelabs/flutter/index.html?index=..%2F..index) - 90 min
-* ❌ [Building a Cupertino app with Flutter](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=..%2F..index) - 51 min
+* ✅ [Building a Cupertino app with Flutter](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=..%2F..index) - 51 min
+    * [Example solution](./codelabs/flutter-cupertino)
+    * too much "copy these simple 100 lines of code and paste in your project"
+    * the provider package has changed its API and other mistakes in the guide
 * ❌ [Firebase for Flutter](https://codelabs.developers.google.com/codelabs/flutter-firebase/index.html?index=..%2F..index) - 61 min
 * ❌ [MDC-101 Flutter: Material Components (MDC) Basics (Flutter)](https://codelabs.developers.google.com/codelabs/mdc-101-flutter/index.html?index=..%2F..index) - 14 min
 * ❌ [MDC-102 Flutter: Material Structure and Layout (Flutter)](https://codelabs.developers.google.com/codelabs/mdc-102-flutter/index.html?index=..%2F..index) - 14 min
