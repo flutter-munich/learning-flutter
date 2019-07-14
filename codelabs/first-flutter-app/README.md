@@ -108,3 +108,7 @@ Everytime we run out of suggested random word pairs, the builder function will c
 We add heart icons to the list item, so that in the next step (after handling user interaction) we can save words as favorites.
 
 To do so, we use the `ListTile`'s `trailing` argument that expect a widget: we provide here the filled or outlined versions of the heart icon, depending on whether the word was already favorited by the user.
+
+### [Add interactivity](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/index.html?index=..%2F..index#4)
+
+We use the `onTap` event handlers on the `ListTile`: if the wordpair was already favorited, we remove it from the favorites list on tap. When the user taps on a list item with a startup name that wasn't in the favorites list, we add that startup name to the favorites list.

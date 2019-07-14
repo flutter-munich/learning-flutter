@@ -59,6 +59,15 @@ class RandomWordsState extends State<RandomWords> {
       trailing: isFavorite
           ? Icon(Icons.favorite, color: Colors.red)
           : Icon(Icons.favorite_border),
+      onTap: () {
+        setState(() {
+          if (isFavorite) {
+            _favorites.remove(pair);
+          } else {
+            _favorites.add(pair);
+          }
+        });
+      },
     );
   }
 
