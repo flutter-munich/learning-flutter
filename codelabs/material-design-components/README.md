@@ -43,6 +43,8 @@ In this codelab, we add an app bar with icons and a grid with products.
 
 Exactly one card :)
 
+### [Make a card collection](https://codelabs.developers.google.com/codelabs/mdc-102-flutter/#5)
+
 ## [Material Theming with Color, Shape, Elevation, and Type ](https://codelabs.developers.google.com/codelabs/mdc-103-flutter)
 
 ## [Material Advanced Components](https://codelabs.developers.google.com/codelabs/mdc-104-flutter)
