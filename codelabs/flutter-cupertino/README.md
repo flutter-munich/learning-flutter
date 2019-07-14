@@ -14,3 +14,10 @@ In this codelab
 
 ## [Create the initial `cupertino` app](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#2)
 
+```
+$ flutter create --template app --org flutter_cupertino.codelabs.dev.dartside --project-name flutter_cupertino .
+```
+
+* separate file for styles: [styles.dart](lib/styles.dart)
+* `CupertinoApp` provides theming, navigation, text direction, and other defaults required to create an app that an iOS user expects.
+* `CupertinoPageScaffold` supports single pages and accepts a navigation bar, background color, and holds the widget tree for the page
