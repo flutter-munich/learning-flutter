@@ -55,4 +55,12 @@ Exactly one card :)
 
 ### [Add shapes](https://codelabs.developers.google.com/codelabs/mdc-103-flutter/#6)
 
+### [Replace GridView with AsymmetricView](https://codelabs.developers.google.com/codelabs/mdc-103-flutter/#7)
+
 ## [Material Advanced Components](https://codelabs.developers.google.com/codelabs/mdc-104-flutter)
+
+### [Add the backdrop menu](https://codelabs.developers.google.com/codelabs/mdc-104-flutter/#3)
+
+### [Add a shape](https://codelabs.developers.google.com/codelabs/mdc-104-flutter/#4)
+
+Customize backdrop shape.
