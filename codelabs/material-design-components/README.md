@@ -2,7 +2,8 @@
 
 This folder contains code from four codelabs (MDC codelabs).
 
-1. Material Components Basics: login screen.
+1. Basics: login screen
+2. Structure and layout: app bar with icons and a grid list full of products
 
 ## [Material Components Basics](https://codelabs.developers.google.com/codelabs/mdc-101-flutter)
 
@@ -33,6 +34,12 @@ Make a `TextField` filled to help people recognize the tap or touch target area 
 A layout should contain a single prominent button: use `RaisedButton`.
 
 ## [Material Structure and Layout](https://codelabs.developers.google.com/codelabs/mdc-102-flutter)
+
+In this codelab, we add an app bar with icons and a grid with products.
+
+### [Add top app bar](https://codelabs.developers.google.com/codelabs/mdc-102-flutter/#3)
+
+
 
 ## [Material Theming with Color, Shape, Elevation, and Type ](https://codelabs.developers.google.com/codelabs/mdc-103-flutter)
 
