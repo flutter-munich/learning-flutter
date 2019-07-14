@@ -49,6 +49,6 @@ Exactly one card :)
 
 ### [Change colors](https://codelabs.developers.google.com/codelabs/mdc-103-flutter/#3)
 
-
+### [Modify typography and label styles](https://codelabs.developers.google.com/codelabs/mdc-103-flutter/#4)
 
 ## [Material Advanced Components](https://codelabs.developers.google.com/codelabs/mdc-104-flutter)
