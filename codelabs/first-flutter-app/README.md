@@ -102,3 +102,9 @@ The `ListView.builder` factory constructor takes an `itemBuilder` argument. Two 
 Everytime we run out of suggested random word pairs, the builder function will create more random word pairs.
 
 ## Part 2
+
+### [Add ❤️ icons to the list](https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/index.html?index=..%2F..index#3)
+
+We add heart icons to the list item, so that in the next step (after handling user interaction) we can save words as favorites.
+
+To do so, we use the `ListTile`'s `trailing` argument that expect a widget: we provide here the filled or outlined versions of the heart icon, depending on whether the word was already favorited by the user.

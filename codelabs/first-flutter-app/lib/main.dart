@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 // This widget does very little: it just creates its state
 class RandomWords extends StatefulWidget {
   @override
@@ -31,22 +30,35 @@ class RandomWords extends StatefulWidget {
 // State<RandomWords> indicates that we use the generic state class
 // for use with RandomWords widget
 class RandomWordsState extends State<RandomWords> {
-
-  // for saving suggested word pairs
+  // For storing suggested word pairs (the startup name suggestions)
   final List<WordPair> _suggestions = <WordPair>[];
 
+  // This set stores the word pairings that the user favorited.
+  // We use sets because set automatically handles duplicates:
+  // in a set, no duplicates are allowed.
+  // Liked, heart, favorited, saved are all the same:
+  // the user liked a startup name
+  final Set<WordPair> _favorites = Set<WordPair>();
 
   // Make font size larger
-  final TextStyle _biggerFont = const TextStyle(fontSize: 18); 
-
+  final TextStyle _biggerFont = const TextStyle(fontSize: 18);
 
   /// Build a row using the word pair: [pair]
   Widget _buildRow(WordPair pair) {
+    // We could also write final bool isFavorite, but the type is inferred,
+    // so we can also omit the type declaration.
+    // Let's see if the word pair was already favorited:
+    final isFavorite = _favorites.contains(pair);
     return ListTile(
       title: Text(
         pair.asPascalCase,
         style: _biggerFont,
       ),
+      // When favorite, fill the heart icon, when it's not favorite,
+      // just display the outlined heart icon
+      trailing: isFavorite
+          ? Icon(Icons.favorite, color: Colors.red)
+          : Icon(Icons.favorite_border),
     );
   }
 
