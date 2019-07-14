@@ -80,3 +80,9 @@ import 'missing-semicolons.dart'
 ## [Add customer info](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#7)
 
 ## [Add date picker](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#8)
+
+## [Add selected items for purchase](https://codelabs.developers.google.com/codelabs/flutter-cupertino/index.html?index=../..index#9)
+
+**TODO: Mistakes in codelab**
+
+`ShoppingCartItem` is missing from the tutorial. Readers need to look up the widget definition from GitHub.
