@@ -65,8 +65,18 @@ class _MyHomePageState extends State<MyHomePage> {
          title: Text(record.name),
          trailing: Text(record.votes.toString()),
          onTap: () {
-           final votes = record.votes + 1;
-           record.reference.updateData({'votes': votes});
+           // by wrapping the read and write operations in one transaction,
+           // you're telling Cloud Firestore to only commit a change if there
+           // was no external change to the underlying data while the transaction
+           // was running.
+           Firestore.instance.runTransaction((transaction) async {
+             final freshSnapshot = await transaction.get(record.reference);
+             final freshRecord = Record.fromSnapshot(freshSnapshot);
+             await transaction.update(
+               record.reference,
+               {'votes': freshRecord.votes + 1},
+             );
+           });
          },
        ),
      ),
