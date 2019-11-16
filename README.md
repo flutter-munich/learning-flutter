@@ -1,4 +1,4 @@
-# `dartsidedev/learning-flutter`
+# `learning-flutter`
 
 Flutter codelabs, cookbooks and other tutorials.
 
@@ -44,7 +44,7 @@ Short videos (~1 min) introducing a widget and its features and usage.
 
 A list of YouTube videos (each video is around an hour long) where Flutter developers work on an app or task. Almost no editing, so you can see all the mistakes and observe the thought process of the developers.
 
-#### [Fluttery](https://www.youtube.com/watch?v=syd0c9Vi2hg&list=PLkXouNW6n0A8ANZ16Fk49qsxpBbzxHGCn)
+#### [Fluttery](https://www.reddit.com/r/FlutterDev/comments/d8ne1n/your_favorite_tutorials_for_3_hour_long_flutter/f1bn9ni/)
 
 Implement beautiful custom user interfaces with Flutter. Videos show all necessary steps to create pretty advanced UIs and are usually ~2-3 hours long.
 
