@@ -4,6 +4,8 @@ Flutter codelabs, cookbooks and other tutorials.
 
 [Slides](https://docs.google.com/presentation/d/14SqRHIeWjWZLpph13PoMRok6gyBdZ0sXvYhYXzjwDqY/edit?usp=sharing)
 
+[Slack](https://join.slack.com/t/fluttermunich/shared_invite/enQtODM2NzkyNzAxOTA4LTcxYjM1NzAxMWFmZTA0ZmQ0MWY3M2EwZGI2ZDUyODQyNTI1YjJkNmE3ZmYxM2YxZGNiMDllZDgwNzUzNWMzYTk)
+
 ## Recommendations
 
 ### Beginners
