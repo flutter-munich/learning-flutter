@@ -2,6 +2,8 @@
 
 Flutter codelabs, cookbooks and other tutorials.
 
+[Slides](https://docs.google.com/presentation/d/14SqRHIeWjWZLpph13PoMRok6gyBdZ0sXvYhYXzjwDqY/edit?usp=sharing)
+
 ## Recommendations
 
 ### Beginners
